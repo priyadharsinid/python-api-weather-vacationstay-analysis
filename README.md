@@ -1,60 +1,39 @@
-# python-api-challenge
+# python-api-weather-vacationstay-analysis
+
+## Overview
 
 Data's true power is its ability to definitively answer questions. "What is the weather like as we approach the equator?"
 Now, we know what you may be thinking: “That’s obvious. It gets hotter.” But, if pressed for more information, how would you prove that?
 
-Part 1:Weather.py
-In this deliverable, I have  created a Python script to visualize the weather of over 500 cities of varying distances from the equator
-I have created  a series of scatter plots to showcase the following relationships:
+## Part 1: Weather.py
 
-Latitude vs. Temperature
+In this deliverable, I have created a Python script to visualize the weather of over 500 cities of varying distances from the equator. I have generated a series of scatter plots to showcase the following relationships:
 
-Latitude vs. Humidity
+- Latitude vs. Temperature
+- Latitude vs. Humidity
+- Latitude vs. Cloudiness
+- Latitude vs. Wind Speed
 
-Latitude vs. Cloudiness
+Additionally, separate scatter plots have been created for the Northern and Southern Hemispheres to analyze the relationships between temperature, humidity, cloudiness, and wind speed with latitude. The script also calculates and displays the linear regression line, the model's formula, and the r-values.
 
-Latitude vs. Wind Speed
+## Part 2: Vacation.py
 
-Northern Hemisphere: Temperature vs. Latitude
+In this deliverable, I have utilized the Geoapify API and the geoViews Python library to create map visualizations. The following steps were completed:
 
-Southern Hemisphere: Temperature vs. Latitude
+- Created a map that displays a point for every city in the city_data_df DataFrame. The size of the point represents the humidity in each city.
+- Narrowed down the city_data_df DataFrame to find ideal weather conditions, such as a maximum temperature lower than 27 degrees but higher than 21 and wind speed less than 5 m/s.
+- Created a new DataFrame called hotel_df to store the city, country, coordinates, and humidity.
+- Used the Geoapify API to find the first hotel located within 10,000 meters of the coordinates for each city. Added the hotel name and country as additional information in the hover message for each city on the map.
+- Zero cloudiness
 
-Northern Hemisphere: Humidity vs. Latitude
+## Requirements
 
-Southern Hemisphere: Humidity vs. Latitude
 
-Northern Hemisphere: Cloudiness vs. Latitude
+- Python
+- Pandas
+- Matplotlib
+- GeoViews Python library
+- Geoapify API
+- NumPy
 
-Southern Hemisphere: Cloudiness vs. Latitude
-
-Northern Hemisphere: Wind Speed vs. Latitude
-
-Southern Hemisphere: Wind Speed vs. Latitude
-
-The linear regression line, the model's formula, and the r values are generated.
-
-part 2:Vacation.py
-In this deliverable, I have used Geoapify API and the geoViews Python library  to create map visualizations.
-
-The following steps are completed.
-
-Create a map that displays a point for every city in the city_data_df DataFrame
-
-The size of the point should be the humidity in each city.
-
-Narrow down the city_data_df DataFrame to find your ideal weather condition.
-
-For example:
-
-A max temperature lower than 27 degrees but higher than 21
-
-Wind speed less than 5 m/s
-
-Zero cloudiness
-
-Create a new DataFrame called hotel_df to store the city, country, coordinates, and humidity.
-
-For each city, use the Geoapify API to find the first hotel located within 10,000 meters of your coordinates.
-Add the hotel name and the country as additional information in the hover message for each city on the map .
-Hotel map.
-
+Feel free to customize the content further to better suit your project's specifics.
