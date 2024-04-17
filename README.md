@@ -21,10 +21,10 @@ Additionally, separate scatter plots have been created for the Northern and Sout
 In this deliverable, I have utilized the Geoapify API and the geoViews Python library to create map visualizations. The following steps were completed:
 
 - Created a map that displays a point for every city in the city_data_df DataFrame. The size of the point represents the humidity in each city.
-- Narrowed down the city_data_df DataFrame to find ideal weather conditions, such as a maximum temperature lower than 27 degrees but higher than 21 and wind speed less than 5 m/s.
+- Narrowed down the city_data_df DataFrame to find ideal weather conditions, such as a maximum temperature lower than 27 degrees but higher than 21  wind speed less than 5 m/s and Zero cloudiness
 - Created a new DataFrame called hotel_df to store the city, country, coordinates, and humidity.
 - Used the Geoapify API to find the first hotel located within 10,000 meters of the coordinates for each city. Added the hotel name and country as additional information in the hover message for each city on the map.
-- Zero cloudiness
+  
 
 ## Requirements
 
@@ -36,4 +36,4 @@ In this deliverable, I have utilized the Geoapify API and the geoViews Python li
 - Geoapify API
 - NumPy
 
-Feel free to customize the content further to better suit your project's specifics.
+
